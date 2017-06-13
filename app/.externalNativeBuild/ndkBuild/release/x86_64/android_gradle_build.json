@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\cpp\\Android.mk",
+    "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\cpp\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\cpp\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\cpp\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "native-lib-release-x86_64": {
+      "buildCommand": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dC:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\cpp\\Android.mk NDK_APPLICATION_MK\u003dC:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\cpp\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dC:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dC:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\ndkBuild\\release\\lib C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/build/intermediates/ndkBuild/release/obj/local/x86_64/libnative-lib.so",
+      "toolchain": "toolchain-x86_64",
+      "abi": "x86_64",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\cpp\\native-lib.cpp",
+          "flags": "\"-gcc-toolchain\" \"C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../toolchains/x86_64-4.9/prebuilt/windows-x86_64\" \"-target\" \"x86_64-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iinclude/\" \"-IC:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\" \"-IC:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/../llvm-libc++abi/include\" \"-IC:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/android/support/include\" \"-IC:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp\" \"-std\u003dc++11\" \"-DANDROID\" \"-D__ANDROID_API__\u003d21\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-fexceptions\" \"--sysroot\" \"C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sysroot/usr/include/x86_64-linux-android\""
+        }
+      ],
+      "output": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\x86_64\\libnative-lib.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86_64": {
+      "cppCompilerExecutable": "C:\\Users\\Admin\\AppData\\Local\\Android\\sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
