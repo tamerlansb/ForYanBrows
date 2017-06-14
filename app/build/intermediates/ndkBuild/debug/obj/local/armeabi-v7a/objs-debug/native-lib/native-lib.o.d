@@ -31,6 +31,10 @@ C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/build/intermediates/ndkBuil
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdexcept \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\atomic \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__undef_min_max \
+  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\vector \
+  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__bit_reference \
+  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\climits \
+  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__split_buffer \
   C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkHttp.h \
   C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/chilkatDefs.h \
   C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/ck_inttypes.h \
@@ -41,7 +45,6 @@ C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/build/intermediates/ndkBuil
   C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkObject.h \
   C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkClassWithCallbacks.h \
   C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkMultiByteBase.h \
-  C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkJsonObject.h \
   C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/json.hpp \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\array \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cassert \
@@ -63,7 +66,6 @@ C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/build/intermediates/ndkBuil
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\ctime \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/android/support/include\time.h \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\ratio \
-  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\climits \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\system_error \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cerrno \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__threading_support \
@@ -76,9 +78,7 @@ C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/build/intermediates/ndkBuil
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\map \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__tree \
   C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\numeric \
-  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\sstream \
-  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\vector \
-  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__split_buffer
+  C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\sstream
 
 C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string:
 
@@ -142,6 +142,14 @@ C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/ll
 
 C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__undef_min_max:
 
+C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\vector:
+
+C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__bit_reference:
+
+C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\climits:
+
+C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__split_buffer:
+
 C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkHttp.h:
 
 C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/chilkatDefs.h:
@@ -161,8 +169,6 @@ C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkObje
 C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkClassWithCallbacks.h:
 
 C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkMultiByteBase.h:
-
-C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/include/CkJsonObject.h:
 
 C:/Users/Admin/AndroidStudioProjects/ForYanBrows/app/src/main/cpp/json.hpp:
 
@@ -206,8 +212,6 @@ C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/android/su
 
 C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\ratio:
 
-C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\climits:
-
 C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\system_error:
 
 C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cerrno:
@@ -233,7 +237,3 @@ C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/ll
 C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\numeric:
 
 C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\sstream:
-
-C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\vector:
-
-C:/Users/Admin/AppData/Local/Android/sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__split_buffer:

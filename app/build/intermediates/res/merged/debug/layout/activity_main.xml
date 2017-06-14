@@ -14,14 +14,14 @@ tools:context="com.example.admin.foryanbrows.MainActivity">
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText"
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_weight="1"
         android:hint="Введите запрос или URL"
-        android:maxLines="1"
-        android:layout_weight="1"/>
+        android:completionThreshold="1"
+        android:maxLines="1" />
 
     <Button
         android:id="@+id/goBut"

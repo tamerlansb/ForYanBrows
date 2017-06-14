@@ -1,23 +1,25 @@
 #include <jni.h>
 #include <string>
+#include <vector>
+#include <algorithm>
 
 #include "include/CkHttp.h"
-#include "include/CkJsonObject.h"
 #include "json.hpp"
+
+const int MAX_COUNT_TIPS = 5;
 
 using namespace std;
 using json = nlohmann::json;
 extern "C"
 JNIEXPORT jobjectArray JNICALL
-Java_com_example_admin_foryanbrows_MainActivity_GetTips(
+Java_com_example_admin_foryanbrows_AutoCompleteAdapter_GetTips(
         JNIEnv *env,
         jobject obj, jstring param) {
     string response ;
     jobjectArray result;
     jboolean  isCopy;
     CkHttp http;
-
-    result = (jobjectArray)env->NewObjectArray(5,
+    result = (jobjectArray)env->NewObjectArray(0,
                                                env->FindClass("java/lang/String"),
                                                env->NewStringUTF(""));
     try {
@@ -35,49 +37,45 @@ Java_com_example_admin_foryanbrows_MainActivity_GetTips(
         const char *str = http.quickGetStr(addr.c_str());
 
         if (str==NULL) {
-            response = "Null";
-        } else
-        {
-            response = string(str);
-
-			for(int i=0;i<5;i++) {
-                env->SetObjectArrayElement(
-                        result, i, env->NewStringUTF( string("qQ").c_str() ));
-            }
-        }
-
-
-
-        string request_word = env->GetStringUTFChars(param, &isCopy);
-        //env->SetObjectArrayElement(
-        //        result, 4, env->NewStringUTF( response.c_str() ));
-        env->SetObjectArrayElement(
-                result, 3, env->NewStringUTF( request_word.c_str() ));
-        env->SetObjectArrayElement(
-                result, 0, env->NewStringUTF( "Success " ));
-        /*CkJsonObject json;
-        success = json.LoadFile("http://suggest.yandex.ru/suggest-ff.cgi?part=янд");
-        if (success != true) {
-            hello = string(http.lastErrorText()) + "\r\n";
+            response = "";
         }
         else
         {
-            json[]
-            hello = "success json";
-        }*/
-        //hello = string(str);
-        /*if (http.get_LastMethodSuccess() != true) {
-            hello = string(http.lastErrorText());
-        } else {
-            hello = string(str);
-        }*/
-		
+            response = string(str);
+            json j = json::parse(response);
+            int i = 1;
+            for (auto elem: j) {
+                if (i == 1) {
+                        i++;
+                } else
+                if (i == 2) {
+                    int counter = 0;
+                    vector<string> tips;
+                    for (string e: elem) {
+                        if ( string(e) != ""  && find(tips.begin(), tips.end(), string(e) ) == tips.end()) {
+                            tips.push_back(e);
+                            ++counter;
+                        }
+                        if (counter == MAX_COUNT_TIPS)
+                            break;
+                    }
+                    result = (jobjectArray)env->NewObjectArray(tips.size(),
+                                                               env->FindClass("java/lang/String"),
+                                                               env->NewStringUTF(""));
+                    for (int k = 0; k < tips.size(); ++k) {
+                        env->SetObjectArrayElement(
+                                result, k , env->NewStringUTF(tips[k].c_str() ));
+                    }
+                    break;
+                }
+            }
+        }
     }
     catch (...)
     {
-        response = "exeption";
-        env->SetObjectArrayElement(
-                result, 3, env->NewStringUTF( "exeption"  ));
+        result = (jobjectArray)env->NewObjectArray(0,
+                                                   env->FindClass("java/lang/String"),
+                                                   env->NewStringUTF(""));
     }
     //env->NewStringUTF(response.c_str());
     return result;

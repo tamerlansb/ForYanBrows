@@ -587,6 +587,7 @@ int id add 0x7f0b001b
 int id alertTitle 0x7f0b0043
 int id all 0x7f0b000e
 int id always 0x7f0b0025
+int id autoComplete 0x7f0b005f
 int id basic 0x7f0b000f
 int id beginning 0x7f0b0022
 int id bottom 0x7f0b002a
@@ -603,7 +604,6 @@ int id customPanel 0x7f0b003f
 int id decor_content_parent 0x7f0b004d
 int id default_activity_button 0x7f0b0032
 int id disableHome 0x7f0b0015
-int id editText 0x7f0b005f
 int id edit_query 0x7f0b0051
 int id end 0x7f0b0023
 int id end_padder 0x7f0b0078

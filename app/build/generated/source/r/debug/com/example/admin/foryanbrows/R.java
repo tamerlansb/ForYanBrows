@@ -2308,6 +2308,7 @@ containing a value of this type.
         public static final int alertTitle=0x7f0b0043;
         public static final int all=0x7f0b000e;
         public static final int always=0x7f0b0025;
+        public static final int autoComplete=0x7f0b005f;
         public static final int basic=0x7f0b000f;
         public static final int beginning=0x7f0b0022;
         public static final int bottom=0x7f0b002a;
@@ -2324,7 +2325,6 @@ containing a value of this type.
         public static final int decor_content_parent=0x7f0b004d;
         public static final int default_activity_button=0x7f0b0032;
         public static final int disableHome=0x7f0b0015;
-        public static final int editText=0x7f0b005f;
         public static final int edit_query=0x7f0b0051;
         public static final int end=0x7f0b0023;
         public static final int end_padder=0x7f0b0078;
