@@ -40,12 +40,11 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
                 try
                 {
                     URL url = new URL("http://" + selectedHint);
-                    url.toURI()
                     ((WebView) findViewById(R.id.webView)).loadUrl(url.toString());
                 }
                 catch (MalformedURLException e) {
                     String url = "https://yandex.ru/search/?text=" + selectedHint.replace(' ','+');
-                    ((WebView) findViewById(R.id.webView)).loadUrl(url.toString());
+                    ((WebView) findViewById(R.id.webView)).loadUrl(url);
                 }
                 // убрать фокус
                 InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
