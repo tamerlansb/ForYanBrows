@@ -23,6 +23,7 @@ bool stringIsEmpty(string s)
     return counter == s.size();
 }
 
+
 extern "C"
 JNIEXPORT jobjectArray JNICALL
 Java_com_example_admin_foryanbrows_AutoCompleteAdapter_GetTips(

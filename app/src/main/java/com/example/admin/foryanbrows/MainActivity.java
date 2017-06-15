@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                 ArrayList<String> str = new ArrayList<>();
                 for (int i = 0; i < tabs.getSize(); ++i)
                 {
-                    str.add(tabs.getList().get(i).getUrl() );
+                    str.add(tabs.getList().get(i).getTitle() );
                 }
                 Intent intent = new Intent(this, TabsActivity.class);
                 intent.putStringArrayListExtra("tabsName", str);
