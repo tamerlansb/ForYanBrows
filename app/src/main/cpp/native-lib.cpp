@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <cctype>
 
 #include "include/CkHttp.h"
 #include "json.hpp"
@@ -10,6 +11,18 @@ const int MAX_COUNT_TIPS = 5;
 
 using namespace std;
 using json = nlohmann::json;
+
+bool stringIsEmpty(string s)
+{
+    int counter = 0;
+    for (int i = 0; i < s.size(); ++i)
+    {
+        if (isspace(s[i]))
+            counter++;
+    }
+    return counter == s.size();
+}
+
 extern "C"
 JNIEXPORT jobjectArray JNICALL
 Java_com_example_admin_foryanbrows_AutoCompleteAdapter_GetTips(
@@ -52,7 +65,8 @@ Java_com_example_admin_foryanbrows_AutoCompleteAdapter_GetTips(
                     int counter = 0;
                     vector<string> tips;
                     for (string e: elem) {
-                        if ( string(e) != ""  && find(tips.begin(), tips.end(), string(e) ) == tips.end()) {
+                        if ( string(e) != ""  && find(tips.begin(), tips.end(), string(e) ) == tips.end() &&
+                                !stringIsEmpty(string(e))) {
                             tips.push_back(e);
                             ++counter;
                         }

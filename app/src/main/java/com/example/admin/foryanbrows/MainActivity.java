@@ -25,7 +25,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class MainActivity extends AppCompatActivity implements TextView.OnEditorActionListener, View.OnClickListener {
+import static android.view.KeyEvent.KEYCODE_ENTER;
+
+public class MainActivity extends AppCompatActivity implements  View.OnClickListener {
 
     private  WebViewTabsHelper tabs;
 
@@ -36,7 +38,23 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
 
         tabs = new WebViewTabsHelper(this,(LinearLayout) findViewById( R.id.containerWebView));
         ((Button)findViewById(R.id.goBut)).setOnClickListener(this);
-        ((EditText) findViewById(R.id.autoComplete)).setOnEditorActionListener(this);
+        ((EditText) findViewById(R.id.autoComplete)).setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                boolean consumed = false;
+                if (keyCode == KEYCODE_ENTER) {
+                    String field =  ((AutoCompleteTextView) findViewById(R.id.autoComplete)).getText().toString();
+                    try {
+                        URL url = new URL("http://" + field);
+                        tabs.getCurrent().loadUrl(url.toString());
+                    } catch (MalformedURLException e) {
+                        String url = "https://yandex.ru/search/?text=" + field.replace(' ', '+');
+                        tabs.getCurrent().loadUrl(url);
+                    }
+                    consumed = true;
+                }
+                return consumed;
+            }
+        });
         updateCurrentBindings();
 
         try
@@ -88,17 +106,6 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
                 ((AutoCompleteTextView) findViewById(R.id.autoComplete)).setText(selectedHint);
             }
         });
-    }
-
-    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        if( event != null && ( event.getKeyCode() == KeyEvent.KEYCODE_ENTER || event.getKeyCode() == '\n') ){
-            // обработка нажатия Enter
-            tabs.getCurrent().loadUrl("http://"+((EditText) findViewById(R.id.autoComplete)).getText().toString());
-            Toast.makeText(this, "Нажата кнопка Enter", Toast.LENGTH_LONG).show();
-            return true;
-        }
-        Toast.makeText(this, "Smth written", Toast.LENGTH_LONG).show();
-        return false;
     }
 
     public void onClick(View v) {
