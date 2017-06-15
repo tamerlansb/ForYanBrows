@@ -21,7 +21,7 @@ public class WebViewTabsHelper {
         this.context = context;
         tabs = new ArrayList<WebView>();
         addNewWebView();
-        current = 0
+        current = 0;
         getCurrent().setVisibility(View.VISIBLE);
     }
 
@@ -94,7 +94,7 @@ public class WebViewTabsHelper {
             {
                 contaner.addView(tabs.get(i));
             }
-            if (current > getSize())
+            if (current >= getSize())
             {
                 current--;
             }

@@ -23,11 +23,11 @@ import android.widget.Toast;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 public class MainActivity extends AppCompatActivity implements TextView.OnEditorActionListener, View.OnClickListener {
 
     private  WebViewTabsHelper tabs;
-    private WebView current;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
         tabs = new WebViewTabsHelper(this,(LinearLayout) findViewById( R.id.containerWebView));
         ((Button)findViewById(R.id.goBut)).setOnClickListener(this);
         ((EditText) findViewById(R.id.autoComplete)).setOnEditorActionListener(this);
+        updateCurrentBindings();
 
         try
         {
@@ -45,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
         catch (Exception ex)
         {
             Toast.makeText(this, ex.getMessage(),Toast.LENGTH_LONG).show();
-            ((EditText) findViewById(R.id.autoComplete)).setText(ex.getMessage());
         }
 
     }
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (data == null) {return;}
         int index = data.getIntExtra("SelectedItemPosition",0);
+        ((AutoCompleteTextView) findViewById(R.id.autoComplete)).setText("");
         if (index == -1)
         {
             WebView w = tabs.addNewWebView();
@@ -64,9 +65,8 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
         this.updateCurrentBindings();
     }
 
-    private  void  updateCurrentBindings()
+    private void updateCurrentBindings()
     {
-        current  = tabs.getCurrent();
         ((AutoCompleteTextView) findViewById(R.id.autoComplete)).setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
         if( event != null && ( event.getKeyCode() == KeyEvent.KEYCODE_ENTER || event.getKeyCode() == '\n') ){
             // обработка нажатия Enter
-            current.loadUrl("http://"+((EditText) findViewById(R.id.autoComplete)).getText().toString());
+            tabs.getCurrent().loadUrl("http://"+((EditText) findViewById(R.id.autoComplete)).getText().toString());
             Toast.makeText(this, "Нажата кнопка Enter", Toast.LENGTH_LONG).show();
             return true;
         }
@@ -104,13 +104,13 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
     public void onClick(View v) {
         // по id определеяем кнопку, вызвавшую этот обработчик
         if (v.getId()== R.id.goBut ) {
-            current.loadUrl("http://"+((EditText) findViewById(R.id.autoComplete)).getText().toString());
+            tabs.getCurrent().loadUrl("http://"+((EditText) findViewById(R.id.autoComplete)).getText().toString());
         }
 
     }
     public void onBackPressed(){
-        if (current.canGoBack()) {
-            current.goBack();
+        if ( tabs.getCurrent().canGoBack()) {
+            tabs.getCurrent().goBack();
         }
         else  {
             super.onBackPressed();
@@ -125,9 +125,7 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // получим идентификатор выбранного пункта меню
         int id = item.getItemId();
-        // Операции для выбранного пункта меню
         switch (id) {
             case R.id.action_tabs:
                 ArrayList<String> str = new ArrayList<>();
@@ -137,7 +135,6 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
                 }
                 Intent intent = new Intent(this, TabsActivity.class);
                 intent.putStringArrayListExtra("tabsName", str);
-                //startActivity(intent);
                 startActivityForResult(intent, 1);
                 return true;
             case R.id.action_delete:
