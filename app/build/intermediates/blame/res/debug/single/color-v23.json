@@ -24,6 +24,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },

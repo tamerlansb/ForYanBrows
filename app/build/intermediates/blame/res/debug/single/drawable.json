@@ -16,12 +16,20 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
@@ -70,6 +78,10 @@
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",

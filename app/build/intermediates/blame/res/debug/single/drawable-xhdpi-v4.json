@@ -80,6 +80,10 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\design_ic_visibility_off.png",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -170,6 +174,10 @@
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\design_ic_visibility.png",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\drawable-xhdpi-v4\\design_ic_visibility.png"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",

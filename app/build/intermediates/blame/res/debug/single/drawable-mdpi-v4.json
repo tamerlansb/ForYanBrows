@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
@@ -62,6 +62,10 @@
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\design_ic_visibility_off.png",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\drawable-mdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png",
@@ -162,6 +166,10 @@
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\design_ic_visibility.png",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
