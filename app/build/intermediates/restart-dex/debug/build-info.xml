@@ -6,31 +6,40 @@
     density="560dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1497565896929"
+    timestamp="1497740087767"
     token="7764779074646325431"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="430" />
+        duration="2258" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="93" />
+        duration="84" />
     <task
         name="verifier"
-        duration="53" />
+        duration="9" />
 
     <artifact
         location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1497557777743"
+        timestamp="1497739394256"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
@@ -56,13 +65,7 @@
             location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -70,19 +73,25 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1497565493490"
+        timestamp="1497739677081"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1497565896929"
+        timestamp="1497740087767"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Admin\AndroidStudioProjects\ForYanBrows\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\layout\\notification_template_media.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Admin\\.android\\build-cache\\bc8e05fcac1211f9b11dba0b3ee1a7bdf0fcc8db\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
@@ -88,12 +88,12 @@
         "source": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tabs.xml",
-        "source": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\res\\layout\\activity_tabs.xml"
-    },
-    {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Admin\\.android\\build-cache\\7961c9ef37d4fc572d9cf379b6f17b69c6c423c5\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tabs.xml",
+        "source": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\src\\main\\res\\layout\\activity_tabs.xml"
     },
     {
         "merged": "C:\\Users\\Admin\\AndroidStudioProjects\\ForYanBrows\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",

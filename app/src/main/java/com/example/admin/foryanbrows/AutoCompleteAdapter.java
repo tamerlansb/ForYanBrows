@@ -48,7 +48,7 @@ public class AutoCompleteAdapter extends ArrayAdapter<String> implements Filtera
                 if (constraint != null) {
                     // A class that queries a web API, parses the data and returns an ArrayList<Style>
                     try {
-                        String[] s  = GetTips(URLEncoder.encode(constraint.toString(), "UTF-8"));
+                        String[] s  = GetTips(constraint.toString());
                         ArrayList<String> _tips = new ArrayList<>(Arrays.asList(s));
                         tips = _tips;
                     } catch (Exception e) {
