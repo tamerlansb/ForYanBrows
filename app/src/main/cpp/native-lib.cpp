@@ -32,7 +32,10 @@ Java_com_example_admin_foryanbrows_AutoCompleteAdapter_GetTips(
     string response ;
     jobjectArray result;
     jboolean  isCopy;
+
     CkHttp http;
+    http.put_Utf8(true);
+
     result = (jobjectArray)env->NewObjectArray(0,
                                                env->FindClass("java/lang/String"),
                                                env->NewStringUTF(""));
